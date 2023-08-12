@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smarter AA Wallet</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<main>
+    <nav>
+        <div class="logo">Smarter AA Wallet</div>
+        <ul>
+            <li><a href="#AA">Account Apps</a></li>
+            <li><a href="#WS">Wallet SDKs</a></li>
+            <li><a href="#DA">Demand Abstraction</a></li>
+        </ul>
+        <button class="btn">Launch Wallet</button>
+    </nav>
+
+    <div class="main-intro main-box">
+        <p class="p1">
+            Fully Open and Decentralized Smart Contract Wallet Ecosystem Based on Account Abstraction (AA)
+        </p>
+
+        <p class="p2">
+            Countless third-party account applications for crypto users to directly get blockchain services and freely explore Web3 world
+        </p>
+
+        <button class="btn">Launch Wallet</button>
+
+        <div class="ecosystem">
+            <div class="item">
+                <h3 class="title">Developers</h3>
+                <div class="icon">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="80" height="80" fill="url(#pattern0)"/>
+                        <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_10_5" transform="scale(0.005)"/>
+                            </pattern>
+                            <image id="image0_10_5" width="200" height="200" xlink:href="data:image/png;base64,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"/>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="intro">
+                    <strong>Account applications:</strong> fully universal and interoperable
+                </div>
+            </div>
+
+            <div class="item">
+                <h3 class="title">Wallets</h3>
+                <div class="icon">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="80" height="80" fill="url(#pattern0)"/>
+                        <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_10_5" transform="scale(0.005)"/>
+                            </pattern>
+                            <image id="image0_10_5" width="200" height="200" xlink:href="data:image/png;base64,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"/>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="intro">
+                    <strong>Open SDKs:</strong>  freely call and access account applications
+                </div>
+            </div>
+
+            <div class="item">
+                <h3 class="title">Users</h3>
+                <div class="icon">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="80" height="80" fill="url(#pattern0)"/>
+                        <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_10_5" transform="scale(0.005)"/>
+                            </pattern>
+                            <image id="image0_10_5" width="200" height="200" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAARJElEQVR4nO3dXVIbx9fH8R7AcBMjZQWWV4C8gsgrAPJSlbsMK7C8AsQKLFbAcJeqxEGswMMKLFaAvIIgnBscBz3fjqT8bR4YST093T0z51N1qtupSqKX+c3pnhlwpIQQj5KACJFBAiJEBgmIEBkkIEJkkIAIkUECIkQGCYgQGSQgQmSQgAiRQQIiRAYJiBAZJCBCZJCACJFBAiJEBgmIEBkkIEJkkIAIkUECIkQGCYgQGSQghn766af258+fG7hMkuSafyQqSALygJ9//rl1e3u7E0VRmz+2J5NJU49Uk1okVeDfTanR2tra5W+//TbkH4kSkoAgjuPmx48fdwlCR5dSqqXsSwnL4MmTJ+e//vrrSIlSiKhaimehuLu7i5VSHeXWiO4y2NzcPJawhK12AdF7h3/++ecVnWKPPzYp33RnSd6+fXvKXAQmomrhxx9/7BCMQ6YdFaYRQelJUMISUZU223CfMO2octBBeU1QBsyFZ5UNSMwe4+bmRi+leqqc0q2trQPZo/hVyYDMllO6a7RUybGZ7/3xxx9HTIUHEVUp33///Ru6RpdplQzpJvvSTdyrTED01SnubOuu0aaq6Jpu8ppukijhTCUCMgvHO6ZNqtIIiSy5HIqoUmNJFbOkOmFaG4Qk2d7efi3PgBWv1AGpYzi+MGw0Gi8lJMUqbUBqHo45CUnBShkQCcdXhmdnZy8YRQFKF5Affvhh7+7u7oypmNF7EjbuB0yFZRFVGnW6WrUqQnJESHoqpziOm+PxeIdpk/9mm/ErdO5UgaXdZR2WdqUJSDz94q6YNinxgLW1tX0bz3Dt7++PlFLPqEWuqSFBSnVwWOpd8OdKiahSYN9xxpewx1Q87po77i/y3nHns475rE+YroywJPy7A8Jyzh9LrxQB4Qvr8qG/YSoW02fyl4y5rNBFHjPSYeF+zXGZl2IRFbTZ4+pXTMWSODBz70csnpSueT39sgYl+IBwJnvH0FFiFbmXWvF0zzdS7McpG0bskV7b2CO5FHRA5JKuOc7aA7rIPlNjnJwSpdQvlDX6ddFNDsrSTYINSDw9g71n2lLCyPr6+svff/89VYYKXN5e89r287w2VyIqSKyBe6yBD5kKc7k37HSRIcMOZR1Lri5LrmOmwYqo4MTT7nHFtEmJHDhT5+oinKhsbdYfxJIr6KcAIio4fCnSPezJ1UUKXGb9J+SQRFRwaOv6C2kpYUXeLsL3MWTYoQoTakgiKihy5aoQp3SRWBly2NGPeZ1dxmAEFxDOVgOGXUpY1Gg0vjW9tDp7SPQ908LRSQ7oJIkKRFABiaeb8z+ZCsvyHnicuEYq36MnS9vY2HgRym/EDyogtPKYVn7CVNh3zvJlj9EIARkw7FIuBPOTkkEFxPGXUDscdMbLLE5ePU5eh0xdOSbQXUavQgvIhEEUhBtz+9yYGzBd2ey3Vb5j6kwIS61gAuLjC6ihXFezPJzAct3DsSGiguChhdfRkAPuBaMRAjJSjjbqc3kvLuQVTED48AcMsv8oGAEx/s75jlKl1HeUS7lCnZfxh2UbH/6fDE1KFCjPXXVfXT7Pa84riIDEcv/DGZYsRyxZesqAr4AgpYu8ZHQuoryTDbo7eQLi8zGgra2t53l+QtJUEAHx+cHX0AVn444y4PNERrD1X/3QZ+pUEAHx2LrryDggLp/JeoCXzboEpH6uOdC+ZTTCxZQJgxc+llkSkBoiIMbfu8+AsMw6YJmVKIeMPyib+ND12vIVJRwoa0BwymuPlUPGH5RNfOipcn8DqrY4yIy/d76rCYMvQ177C0ZnjD8om/jQBwy7lHCAg8z4e+e78hmQXK/dhNP/2WNkD+JWnoPMd0BcP+Fr/EHZJAFxakxAmoxGfAfE9WMnEpD6uSAgHWXA543COa5kOb1hGEpAYgJywlQUr+wBOSIgPeVIEAEJ4YOvkWMC0mVcWQjfUy0D4uK394mpPAcYnb5Hpz9k6k2e128iiIBovjd/dZHn59IlIB4RkFTJzcLC5Xmeie9IB2uX8qbOAekzvKJEccbsP5qMRviO3jO0KW/ydEATwQSE9h3Tvk+YiuKcE5A9RiMEZMLgVS3vg2iyUS8eyxPjewghXMHSahsQjTPUkGGHEgXIs/8IpcPTAZ0es07/Z4vwJfT4Eg6ZCvsuObjajEY4eSXK8l/oaSDXezARVEA8/0hn1R1zcHUZjRCQK4aW8uuU9xArhyIqKHwRQ4YdSliUZ3kVyv4wzx7KVHABYZkVs8w6YSrsueDM21GGQvlOXD/qrgUXkFh+iZx1nHkPOPMmyhBdfcCwS/n0gZC3lGPBBUTjC0mU/w1hVYw5sJqMRuJwTljHvI8uo1NBBiSUNW8V0D2O6B49ZajOyystyIBo0kWsGDcajVZi+LdKaXwPA4Zdyicvyyst2IBIF8kvb/eIA1le5X0feQQbEI323qO9HzIVq8t91g3k88/dBfMIOiDx9Aw2ZPqMEiuw8cwSy6srhpbyyGf30CIqaPKb342c0z32GI3RPWK6xwlTn7x2Dy34gGicyQYMu5RYzMpBxWf+jqGjPKJ7OL9zfl8pAhLLUmtpNn6gKJBH2y/ogh3lWSkCogXypYXumIOqy5hLAN1jvLW11TZ9dsym0gREC2RdHCorZ9wQTkQhLK3mShUQjbNbouQG4n2X7Ds6Sc59h8bne8XQUv6cEvRYBSKiSocvMVESkrnxxsZGx8ZjGHToLh36DVNfLglHmzEYpQyIRkiGDDtUnVkLRzy9EHLFtEn5YK0L2lTagMTTLzRV9Q2JtXBodI8zusceUx/GhKOVBBYOrbQB0eJpSPpMf6HqxGo4PG/ML7litRfCFauHlDogcyy3ElWfkFxytu0kls628fQkc8W0Sbl2wXvZs/VeilCJgGgsEepwCficAypOLB9Qs8d5+kyfUa4EdbXqMZUJiDb7rSiJqt6+ZMy9gV7R9wY4yfQ4yRwyLdKYu/1x3rv9rlQqIFo8XTL0mf5CVcEl+43Y1n5jkdnP4SSqmF8kXkgHLFLlAjI323gmyu2ywSbdNfp0jZ7ygG6i74n0lFINyoaUoL92FXRbKhuQOb5oF8sG2865stP1fWVn1k0GTHcoW0YEP+U7GbAHOefPQatkQPRehE3nd9Qef+yoEuIgGlDpkydPzn0HpcCTzIj3OFhfXz8NtbNUJiA6FCypXvFFdpRSLVUt3g+k2ZJ1wLRBFSFl856weT9lHoyIKq1ZKH6ZTO8At1Q9jDiQ+j46Szy9AJIqu0uu+/59f0+fPj0NYTMfUaUS8yV9/Phxl+VTlz+2qTpLOZicn3Ud3Zi95r11Xb+3+yKqFPSG8dOnT3oJFSs/d31DNuJgcnrWZV+ir3K9YVo0/d5eE5QBc+eCD8gsGIeTaTBEtmu9V9nc3DxysfwiJDHfS59pgypaypW9Axfv60vBBkSCkQ9B6W1vbx8X3VH0PvDz58+pchOSf98X94aOmDoRUUGRYFilO0q/6KC4DgmGdJN9F90kmIDEbL5vbm70HqPLH5uUsKfwDa+HkOjw659dT1SBIsq72dOkb5i2lChSoY97eAiJXnIlhOSAaSEiypt42jVOJtP7GMIRDir9jNdrptb5CAnSRqOxX8Qy0ltAZl3jhGmTEu4N6SYHRXSTWUjeM3VpSEhe2g6J84DE067xhq4RK+Ed3aRHNzliatXsErA+Abp0Tehf2gx9RDkzO7PoD61NiXAUskThjnuf4RXlktWQOAuILKmCN+LA2rd1YM0RkgHDLuXSNYF/biPwTgJCuz2cTH/4RoTN+qXTmCX12M8vHh8Skpd5Q1J4QAjHyUT2G6Uyu2dyzNSK2dL6PVPX0rOzs5eMxiKqMBKO8qKTJHSSA6ZWcCy4erjxK7yPXH9DVURZF0/b6jumbUqUFAeX1ZCwH0lVMb8MIhMdcZ+OOGC6soiyjg/iHUNHidKzGRL9nN3t7e2QaYNy6Zr9yHOT/UhEWUUrPZnIsqpSbIaE48PLUgtGv6guoqzhzZ9MJByVZDMkrDBS5WGptW7wN/9GlBWEw9eZQThCSA4ISaJymv0CiHdMXVv5qlZE5ebxDQvHTM7CD6GLJKr4n2v/f1YNee6AzDZe75k2KVF911tbWy/y/rDS7Li5YuraiC7ynHEpEZULZ4L3DG1K1MeQg+wFYy4cO4ny0EVW6YK5AsK+o8e+45CpqBmWKkcsVXoqB49dZOkrWsYB8fj4gAjExsbGi7wPN/rqItwX+XaZ+yLGAeGN6XC0KVFfuZdavk60dMADOmCiFjAKCEurmKXVCVNRcxxoRxxoPZUDJ9shww7l0lLLLKOA8IauGFpKCK5qsVwxeoxjztMJ95qAfMuYKaJWwpvp8WYOmQoxd8zB1mU0Ek8fbh0ptgaUM1yufr7ocvVKAYmnb+SKaZMS4j/LHGxZWJUMGHYpZ5a53LtSQOgeMd3jhKkQ9y21pn+Mj2Nrmf3TSgEh5e8Z2pQQ9+Xai8TT1cmfTJ2xGhB53koswgF3wAGXKEOcgFPl8ClfXu8Rr7enMiwdEF58ojzc0BGlstJzTvexzOqxzDpk6soFr7ejMkTUUgiIbn9NSohH5dmsu16lWOsgvu52ivLhoNO/NqjP1Agn4gmDE8u81qUC4qH1ifJauGzJQkCGDDtU4ZbpdksFhBedKoebJ1FuXM1a6kHAh3CsDRh2qaKdE+Q9xkzLBmTCIMRSlrkB9xhHq5Ux3aO9qHtoCwPi8Zl9UVLLrO0fM/sdzmdMC8PrO+D1JWoJCwPi+sqCqIRTli+xMlD08bZKOLSFAXHU8kS1XBCQjjJQZEBWDYcmARFFMA5IXMwjJx82Njb2TH76UQIiirDUz1o8xvJFoWOuqvUSw6tqCwPCi02UPGIiVkRAFh5bj+GYmzDkdcqVqt4yV6qyLHwTvNgBwy4lxNI8BsRKMOYWvglZYgkDHwhISxkyCMglG/Bke3ublZTZUuoxywQkJiAnTIVY1lJ3qR8SL79Jv6RSukXfVrd4yMKAyI1CsSrO5sY3CjMu846plP92urm5OSgyFF9aGBCNljdg2KWEWGTMVaNWYrjU+eJO+iU1JBDD9fX11OQSrQ1LBSQj1ULcd8zyqstoRK9YXHWHZSwVEI0u0md4RQnxmA90j7Zp9wjR0gHRCMmQYYcS4r4xd6s7vpZCRVkpIPH0CkOqJCTiHvYKKz/nVAYrBUSLJSTia2PC0a1iOLSVAzLHcitR8ghK3Rk/BFgWxgHRZpfkEqXc/k5VEYRzNuRxUqEN+UNyBUSLp0uuPlPpJvXwYW1trfv27dsB88rLHZC52b2SnpJf7lBVeq/R397e7le9a3zJWkDmZkHpMt2lRPnVMhhz1gMyp++I3t7e9pRSe1SDEuVyOQvGoI7BmCssIHMxe5Sbm5u9yWSyxx93KRGuMTVYX19PTH9tT9UUHpAv6a7y6dOneVhkrxKGf0PBxntQl433KpwG5Evx/zpLRynVUUo9o4Qbl1RKKFIJRTZvAblP/4JsNvedWWDalATGng9Uyp5C/yxFGtLTsqGLqCDp5djff//dJjC6OmoamgYlso0p/XMUOhDDp0+fpkmNN9l5BRuQh9wLTZt/1KS+o+rqghoRhJFeLm1sbIykO9gVUaUXs5/566+/2nd3dy2lVIvwtBSjmtYzqqw+UCNF6RAoRoIw+uabb4bSFdyIqFrQNzAV5iFSM4Spo772HVWUC+o/HPSp+p9/D34FucQajogSS4pnnYrpgzjgr6v8ZGsdSUCEyCABESKDBESIDBIQITJIQITIIAERIoMERIgMEhAhMkhAhMggAREigwREiAwSECEySECEyCABESKDBESIDBIQITJIQITIIAERIoMERIgMEhAhMvwfasPQQbnUVGEAAAAASUVORK5CYII="/>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="intro">
+                    <strong>Demand abstraction: </strong> directly meet user demand in a more natural and efficient way
+                </div>
+            </div>
+
+            <h2 class="ecosystem-title">Decentralized AA Wallet Ecosystem</h2>
+
+            <div class="line l1"></div>
+            <div class="line l2"></div>
+            <div class="line l3"></div>
+        </div>
+    </div>
+
+    <div class="account-abstraction main-box">
+        <h2>Account Abstraction</h2>
+        <div class="content flex-content">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Launch transaction</th>
+                        <th>Self-defined via smart contract</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>External Owned Account (EOA)</td>
+                        <td><svg width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.89027 10.4688L3.38317 7.92472L9.85192 14.304L23.5437 0.663351L26.0749 3.20739L9.85192 19.3665L0.89027 10.4688Z" fill="#71AD42"/>
+                        </svg>
+                        </td>
+                        <td>❌</td>
+                    </tr>
+                    <tr>
+                        <td>Contract Account (CA)</td>
+                        <td>❌</td>
+                        <td><svg width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.89027 10.4688L3.38317 7.92472L9.85192 14.304L23.5437 0.663351L26.0749 3.20739L9.85192 19.3665L0.89027 10.4688Z" fill="#71AD42"/>
+                        </svg>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-arrow">
+                            Upgrade to
+                            <div class="arrow"><svg width="16" height="48" viewBox="0 0 16 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.29289 47.7071C7.68342 48.0976 8.31658 48.0976 8.70711 47.7071L15.0711 41.3431C15.4616 40.9526 15.4616 40.3195 15.0711 39.9289C14.6805 39.5384 14.0474 39.5384 13.6569 39.9289L8 45.5858L2.34315 39.9289C1.95262 39.5384 1.31946 39.5384 0.928932 39.9289C0.538408 40.3195 0.538408 40.9526 0.928932 41.3431L7.29289 47.7071ZM7 0L7 47H9L9 0L7 0Z" fill="black" fill-opacity="0.6"/>
+                            </svg>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Account Abstraction (AA)</td>
+                        <td><svg width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.89027 10.4688L3.38317 7.92472L9.85192 14.304L23.5437 0.663351L26.0749 3.20739L9.85192 19.3665L0.89027 10.4688Z" fill="#71AD42"/>
+                        </svg>
+                        </td>
+                        <td>
+                            <svg width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.89027 10.4688L3.38317 7.92472L9.85192 14.304L23.5437 0.663351L26.0749 3.20739L9.85192 19.3665L0.89027 10.4688Z" fill="#71AD42"/>
+                            </svg>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="right-item">
+                <p class="main-text">Transform the blockchain account of users into fully programmable and customized smart contracts</p>
+                <button class="btn">View ERC-4337</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-box third-party">
+        <h2>Third-party Account Applications</h2>
+
+        <div class="flex-content">
+            <div class="left-content">
+                <p class="main-text">
+                    All kinds of capable and convenient functions and features for users to freely and easily setup and use their AA account better
+                </p>
+                <button class="btn">Develop Account Applications</button>
+            </div>
+
+            <div class="right-content">
+                <h3 class="red">Internal account management applications:</h3>
+                <ul class="red">
+                    <li>Multi sign login</li>
+                    <li>Social recovery</li>
+                    <li>Transfer limits</li>
+                    <li>Token gas payment</li>
+                    <li>···</li>
+                </ul>
+
+                <h3 class="green">External account interaction applications:</h3>
+                <ul class="green">
+                    <li>Auto trading bot</li>
+                    <li>Batch transfer</li>
+                    <li>Gas sponsor</li>
+                    <li>P2P matching</li>
+                    <li>···</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-box sdk-wrapper">
+        <h2>Open SDKs for Third-party Wallets</h2>
+        <div class="content flex-content">
+            <div class="left-content">
+                <ul class="wallets">
+                    <li>
+                        <div class="icon"></div>
+                        <h4>Wallet</h4>
+                    </li>
+                    <li>
+                        <div class="icon"></div>
+                        <h4>Wallet</h4>
+                    </li>
+                    <li>
+                        <div class="icon"></div>
+                        <h4>Wallet</h4>
+                    </li>
+                </ul>
+                <div class="rotate">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="icon"></div>
+                    <h4>SDK</h4>
+                </div>
+                <ul class="account-app">
+                    <li>
+                        <div class="icon"></div>
+                        <h4>Account App</h4>
+                    </li>
+                    <li>
+                        <div class="icon"></div>
+                        <h4>Account App</h4>
+                    </li>
+                    <li>
+                        <div class="icon"></div>
+                        <h4>Account App</h4>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="right-content">
+                <p class="main-text">Each account application can be seamlessly accessed and used in other different AA wallets with full interconnectivity and interoperability</p>
+                <button class="btn">Connect Your AA Wallet</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-box user-demand">
+        <h2>User Demand Abstraction</h2>
+        <div class="content flex-content">
+            <div class="left-content">
+                <p class="main-text">
+                    Users can directly express and get what they need  without going through specific apps by themselves,
+                    which provides the ultimate way of user interaction with the most natural and simple user experience
+                </p>
+                <button class="btn">Launch Smart AA Wallet</button>
+            </div>
+
+            <div class="right-content">
+                <div class="user">
+                    <h3>User</h3>
+                    <p class="p1">Specify demand</p>
+                    <ul class="icon-list">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <p class="p2">Wallet front end</p>
+                </div>
+                <div class="arrow">
+                    <svg width="48" height="16" viewBox="0 0 48 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M47.7071 8.70711C48.0976 8.31658 48.0976 7.68342 47.7071 7.29289L41.3431 0.928932C40.9526 0.538408 40.3195 0.538408 39.9289 0.928932C39.5384 1.31946 39.5384 1.95262 39.9289 2.34315L45.5858 8L39.9289 13.6569C39.5384 14.0474 39.5384 14.6805 39.9289 15.0711C40.3195 15.4616 40.9526 15.4616 41.3431 15.0711L47.7071 8.70711ZM0 9H47V7H0L0 9Z" fill="black" fill-opacity="0.6"/>
+                    </svg>
+                </div>
+                <div class="aa-system">
+                    <h3>AA System</h3>
+                    <p class="p1">Match and run the corresponding apps</p>
+                    <ul class="app-list">
+                        <li>App</li>
+                        <li>App</li>
+                        <li>App</li>
+                        <li>···</li>
+                    </ul>
+                    <p class="p2">Wallet back end</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-box member-box">
+        <h2>Welcome to Join Us!</h2>
+
+        <ul class="member-list">
+            <li>
+                <div class="name">Team member</div>
+                <div class="avatar"></div>
+            </li>
+            <li>
+                <div class="name">Team member</div>
+                <div class="avatar"></div>
+            </li>
+            <li>
+                <div class="name">Team member</div>
+                <div class="avatar"></div>
+            </li>
+            <li>
+                <div class="name">Team member</div>
+                <div class="avatar"></div>
+            </li>
+            <li>
+                <div class="name">Team member</div>
+                <div class="avatar"></div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-box contact-box">
+        <div class="email"> <strong>Contact Email: </strong>smartaawallet@gmail.com</div>
+        <ul class="contact-list">
+            <li><a href="javascript:;" class="discord"></a></li>
+            <li><a href="javascript:;" class="telegram"></a></li>
+            <li><a href="javascript:;" class="twitter"></a></li>
+            <li><a href="javascript:;" class="github"></a></li>
+        </ul>
+    </div>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "official-website",
+  "version": "1.0.0",
+  "description": "Smarter wallet official website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cd build && gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.65.1"
+  }
+}
