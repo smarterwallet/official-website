@@ -333,6 +333,15 @@
         alert('coming soon...')
       })
     })
+    const navElem = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        navElem.classList.add('shadow-nav');
+      } else {
+        navElem.classList.remove('shadow-nav');
+      }
+
+    })
 </script>
 </body>
 </html>

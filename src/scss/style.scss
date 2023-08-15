@@ -1,6 +1,7 @@
 $theme1: #794117;
 $theme2: #F46F0B;
 $nav: #BB7641;
+$bgColor: #fff9f5;
 
 @import "wap";
 
@@ -20,7 +21,7 @@ li {
 body {
     font-family: Helvetica, "Microsoft YaHei UI", sans-serif;
     color: $theme1;
-    background: #faebd7;
+    background: #fff9f5;
 }
 
 .box-content {
@@ -36,8 +37,12 @@ body {
 
 .main-text {
     margin-bottom: 30px;
-    font-size: 24px;
+    font-size: 32px;
+    line-height: 40px;
     font-weight: 700;
+
+    background: linear-gradient(92.45deg, #F46F0B 2.11%, #E6731D 49.38%, #DE7525 91.09%);
+    -webkit-background-clip: text;
 }
 
 .main-box {
@@ -64,8 +69,12 @@ nav {
     position: sticky;
     top: 0;
     z-index: 2;
-    background: #fbe4c9;
-    box-shadow: 0 6px 18px #e3dadaaa;
+    background: $bgColor;
+
+    &.shadow-nav {
+        box-shadow: 0 6px 18px #e3dadaaa;
+    }
+
     .nav-box {
         display: flex;
         align-items: center;
@@ -479,9 +488,9 @@ nav {
                     width: 40px;
                     height: 40px;
                     line-height: 40px;
-                    border-radius: 5px;
+                    border-radius: 10px;
                     color: #fff;
-                    background: $theme1;
+                    background: #D39567;
 
                     &:last-child {
                         width: 24px;

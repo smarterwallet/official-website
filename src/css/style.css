@@ -127,7 +127,7 @@ li {
 body {
   font-family: Helvetica, "Microsoft YaHei UI", sans-serif;
   color: #794117;
-  background: #faebd7;
+  background: #fff9f5;
 }
 
 .box-content {
@@ -142,8 +142,11 @@ body {
 
 .main-text {
   margin-bottom: 30px;
-  font-size: 24px;
+  font-size: 32px;
+  line-height: 40px;
   font-weight: 700;
+  background: linear-gradient(92.45deg, #F46F0B 2.11%, #E6731D 49.38%, #DE7525 91.09%);
+  -webkit-background-clip: text;
 }
 
 .main-box {
@@ -168,7 +171,9 @@ nav {
   position: sticky;
   top: 0;
   z-index: 2;
-  background: #fbe4c9;
+  background: #fff9f5;
+}
+nav.shadow-nav {
   box-shadow: 0 6px 18px rgba(227, 218, 218, 0.6666666667);
 }
 nav .nav-box {
@@ -509,9 +514,9 @@ nav .nav-box li a {
   width: 40px;
   height: 40px;
   line-height: 40px;
-  border-radius: 5px;
+  border-radius: 10px;
   color: #fff;
-  background: #794117;
+  background: #D39567;
 }
 .user-demand .right-content .aa-system .app-list li:last-child {
   width: 24px;
