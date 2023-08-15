@@ -168,8 +168,8 @@ nav {
   position: sticky;
   top: 0;
   z-index: 2;
-  background: #d79562;
-  box-shadow: 0 6px 16px #ece5e5;
+  background: #fbe4c9;
+  box-shadow: 0 6px 18px rgba(227, 218, 218, 0.6666666667);
 }
 nav .nav-box {
   display: flex;
