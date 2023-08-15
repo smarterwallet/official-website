@@ -18,7 +18,7 @@ body {
   background: #faebd7;
 }
 
-main {
+.box-content {
   width: 1280px;
   margin: 0 auto;
 }
@@ -58,14 +58,13 @@ nav {
   box-shadow: 0 6px 17px #e3dada;
 }
 nav .nav-box {
-  width: 1280px;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
   height: 108px;
   color: #BB7641;
+  background: #ffe4c4;
 }
 nav .nav-box ul {
   display: flex;
@@ -123,7 +122,6 @@ nav .nav-box li a {
 }
 
 .main-intro {
-  margin: 0 auto;
   text-align: center;
 }
 .main-intro .p1 {

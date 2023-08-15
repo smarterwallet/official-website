@@ -2,6 +2,7 @@ $theme1: #794117;
 $theme2: #F46F0B;
 $nav: #BB7641;
 
+//@import "wap";
 
 * {
     margin: 0;
@@ -22,10 +23,11 @@ body {
     background: #faebd7;
 }
 
-main {
+.box-content {
     width: 1280px;
     margin: 0 auto;
 }
+
 
 .line {
     position: absolute;
@@ -62,14 +64,13 @@ nav {
     background: #ffe4c4;
     box-shadow: 0 6px 17px #e3dada;
     .nav-box {
-        width: 1280px;
-        margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 20px;
         height: 108px;
         color: $nav;
+        background: #ffe4c4;
 
         ul {
             display: flex;
@@ -137,7 +138,6 @@ nav {
 }
 
 .main-intro {
-    margin: 0 auto;
     text-align: center;
 
     .p1 {
