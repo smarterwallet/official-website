@@ -456,7 +456,7 @@ nav .nav-box li a {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  width: 490px;
+  width: 460px;
 }
 .user-demand .right-content .arrow {
   margin-top: 27px;
@@ -479,7 +479,7 @@ nav .nav-box li a {
   font-weight: 500;
 }
 .user-demand .right-content .user {
-  width: 193px;
+  width: 167px;
 }
 .user-demand .right-content .user .p1 {
   line-height: 48px;
