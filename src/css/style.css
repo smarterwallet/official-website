@@ -13,6 +13,8 @@ li {
 }
 
 body {
+  font-family: Helvetica, "Microsoft YaHei UI", sans-serif;
+  color: #794117;
   background: #faebd7;
 }
 
@@ -23,7 +25,7 @@ main {
 
 .line {
   position: absolute;
-  border: 2px solid #999;
+  border: 2px solid #D69C70;
 }
 
 .main-text {
@@ -34,11 +36,13 @@ main {
 
 .main-box {
   padding: 40px 126px;
+  margin-bottom: 40px;
 }
 .main-box h2 {
   margin-bottom: 30px;
   font-size: 48px;
   text-align: center;
+  color: #F46F0B;
 }
 
 .flex-content {
@@ -47,28 +51,58 @@ main {
 }
 
 nav {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #ffe4c4;
+  box-shadow: 0 6px 17px #e3dada;
+}
+nav .nav-box {
+  width: 1280px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
   height: 108px;
+  color: #BB7641;
 }
-nav ul {
+nav .nav-box ul {
   display: flex;
   margin-left: 220px;
   margin-right: 40px;
   flex: 1;
   justify-content: space-between;
 }
-nav li {
+nav .nav-box li {
+  position: relative;
+  padding: 10px;
   font-size: 20px;
 }
-nav a {
-  color: #000;
+nav .nav-box li:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  transition: all 0.3s;
+  background: currentColor;
+}
+nav .nav-box li:hover:after {
+  left: 0;
+  width: 100%;
+}
+nav .nav-box li a {
+  color: inherit;
 }
 
 .logo {
+  display: flex;
   font: 600 24px/2 Arial;
+}
+.logo .website-name {
+  margin-left: 20px;
 }
 
 .btn {
@@ -77,10 +111,15 @@ nav a {
   line-height: 50px;
   height: 50px;
   font-size: 20px;
-  color: #cccccc;
+  color: #fff;
   border-radius: 15px;
   border: 0;
-  background: #2c3e50;
+  background: #D69C70;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.2509803922);
+  transition: all 0.3s;
+}
+.btn:hover {
+  background: #F46F0B;
 }
 
 .main-intro {
@@ -92,6 +131,7 @@ nav a {
   font-size: 56px;
   font-weight: 700;
   line-height: 70px;
+  color: #F46F0B;
 }
 .main-intro .p2 {
   margin: 30px 0;
@@ -159,6 +199,7 @@ nav a {
 .account-abstraction .content table {
   width: 450px;
   font-weight: 600;
+  color: #AC5F24;
 }
 .account-abstraction .content td {
   position: relative;
@@ -300,7 +341,10 @@ nav a {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  width: 450px;
+  width: 490px;
+}
+.user-demand .right-content .arrow {
+  margin-top: 27px;
 }
 .user-demand .right-content h3 {
   font-size: 24px;
@@ -345,7 +389,7 @@ nav a {
   background: url("../svg/micro.svg") no-repeat center;
 }
 .user-demand .right-content .aa-system {
-  width: 205px;
+  width: 195px;
 }
 .user-demand .right-content .aa-system .app-list {
   display: flex;
@@ -356,9 +400,13 @@ nav a {
   height: 40px;
   line-height: 40px;
   border-radius: 5px;
-  background: #7f8c8d;
+  color: #fff;
+  background: #794117;
 }
 .user-demand .right-content .aa-system .app-list li:last-child {
+  width: 24px;
+  font-weight: bold;
+  color: #794117;
   background: none;
 }
 
