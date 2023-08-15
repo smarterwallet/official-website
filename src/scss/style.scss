@@ -2,7 +2,7 @@ $theme1: #794117;
 $theme2: #F46F0B;
 $nav: #BB7641;
 
-//@import "wap";
+@import "wap";
 
 * {
     margin: 0;
@@ -42,7 +42,10 @@ body {
 
 .main-box {
     padding: 40px 126px;
-    margin-bottom: 40px;
+
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
 
     h2 {
         margin-bottom: 30px;
@@ -69,7 +72,6 @@ nav {
         justify-content: space-between;
         padding: 20px;
         color: $nav;
-        background: #ffe4c4;
 
         ul {
             display: flex;
@@ -224,38 +226,36 @@ nav {
 }
 
 .account-abstraction {
-    .content {
-        table {
-            width: 450px;
-            font-weight: 600;
-            color: #AC5F24;
+    .left-content {
+        width: 450px;
+        font-weight: 600;
+        color: #AC5F24;
+    }
+
+
+    td {
+        position: relative;
+        height: 70px;
+        text-align: center;
+
+        &:first-child {
+            font-size: 22px;
         }
+    }
 
+    .td-arrow {
+        font-size: 18px;
+        font-weight: 500;
 
-        td {
-            position: relative;
-            height: 70px;
-            text-align: center;
-
-            &:first-child {
-                font-size: 22px;
-            }
+        .arrow {
+            position: absolute;
+            left: 48%;
+            top: 18px;
         }
+    }
 
-        .td-arrow {
-            font-size: 18px;
-            font-weight: 500;
-
-            .arrow {
-                position: absolute;
-                left: 48%;
-                top: 18px;
-            }
-        }
-
-        .right-item {
-            width: 410px;
-        }
+    .right-content {
+        width: 410px;
     }
 }
 

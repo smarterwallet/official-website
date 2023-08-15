@@ -1,7 +1,146 @@
 @media (max-width: 1200px) {
     body {
+        font-size: 24px;
+
         .box-content {
             width: initial;
+        }
+
+        nav {
+            position: initial;
+            background: none;
+            box-shadow: none;
+
+            .nav-box {
+                ul {
+                    display: none;
+                }
+            }
+        }
+
+        .logo {
+            .website-name {
+                margin-left: 20px;
+            }
+        }
+
+        .main-box {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .flex-content {
+            display: block;
+
+            .left-content {
+                margin-bottom: 60px;
+            }
+
+            .left-content, .right-content {
+                width: initial;
+            }
+        }
+
+        .main-text {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .btn {
+            font-size: 28px;
+            line-height: 60px;
+            height: 60px;
+        }
+
+        .ecosystem .item .intro {
+            font-size: 24px;
+        }
+
+
+        .ecosystem {
+            .ecosystem-title {
+                top: 360px;
+            }
+
+            .line {
+                width: 228px;
+
+                &.l1 {
+                    transform: rotate(-55deg);
+                }
+
+                &.l2 {
+                    transform: rotate(55deg);
+                }
+
+                &.l3 {
+                    width: 286px;
+                    left: 30%;
+                }
+            }
+        }
+
+        .account-abstraction .left-content {
+            font-size: 28px;
+        }
+
+        .sdk-wrapper .left-content {
+            margin: 0 auto 60px;
+            width: 520px;
+
+            .account-app {
+                width: 160px;
+            }
+
+            .rotate {
+                .line:nth-child(2) {
+                    transform: translate(50px, 0) rotate(-50deg);
+                }
+
+                .line:nth-child(5) {
+                    transform: translate(-10px, 80px) rotate(-230deg);
+                }
+
+                .line:nth-child(6) {
+                    transform: translate(60px, 80px) rotate(50deg);
+                }
+            }
+        }
+
+        .user-demand .right-content {
+            margin: 0 auto;
+            width: 540px;
+
+            h3 {
+                font-size: 28px;
+            }
+
+            .p1, .p2 {
+                font-size: 24px;
+            }
+
+            .aa-system {
+                width: 254px;
+
+                .app-list li {
+                    width: 60px;
+                    height: 60px;
+                    line-height: 60px;
+                }
+            }
+        }
+
+        .third-party .right-content {
+            h3 {
+                width: initial;
+                font-size: 28px;
+            }
+
+            ul li {
+                width: 130px;
+                height: 130px;
+                font-size: 24px;
+            }
         }
     }
 }

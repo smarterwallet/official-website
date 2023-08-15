@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <title>Smarter AA Wallet</title>
     <link rel="stylesheet" href="./css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+        if (window.innerWidth < 1200) {
+          document.write('<meta name="viewport" content="width=750, initial-scale=1" />')
+        }
+    </script>
 </head>
 <body>
 <nav>
@@ -99,7 +103,7 @@
     <div class="account-abstraction main-box">
         <h2>Account Abstraction</h2>
         <div class="content flex-content">
-            <table>
+            <table class="left-content">
                 <thead>
                     <tr>
                         <th></th>
@@ -151,7 +155,7 @@
                 </tbody>
             </table>
 
-            <div class="right-item">
+            <div class="right-item right-content">
                 <p class="main-text">Transform the blockchain account of users into fully programmable and customized smart contracts</p>
                 <a target="_blank" href="https://www.erc4337.io/" class="btn">View ERC-4337</a>
             </div>

@@ -1,3 +1,109 @@
+@media (max-width: 1200px) {
+  body {
+    font-size: 24px;
+  }
+  body .box-content {
+    width: initial;
+  }
+  body nav {
+    position: initial;
+    background: none;
+    box-shadow: none;
+  }
+  body nav .nav-box ul {
+    display: none;
+  }
+  body .logo .website-name {
+    margin-left: 20px;
+  }
+  body .main-box {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  body .flex-content {
+    display: block;
+  }
+  body .flex-content .left-content {
+    margin-bottom: 60px;
+  }
+  body .flex-content .left-content, body .flex-content .right-content {
+    width: initial;
+  }
+  body .main-text {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  body .btn {
+    font-size: 28px;
+    line-height: 60px;
+    height: 60px;
+  }
+  body .ecosystem .item .intro {
+    font-size: 24px;
+  }
+  body .ecosystem .ecosystem-title {
+    top: 360px;
+  }
+  body .ecosystem .line {
+    width: 228px;
+  }
+  body .ecosystem .line.l1 {
+    transform: rotate(-55deg);
+  }
+  body .ecosystem .line.l2 {
+    transform: rotate(55deg);
+  }
+  body .ecosystem .line.l3 {
+    width: 286px;
+    left: 30%;
+  }
+  body .account-abstraction .left-content {
+    font-size: 28px;
+  }
+  body .sdk-wrapper .left-content {
+    margin: 0 auto 60px;
+    width: 520px;
+  }
+  body .sdk-wrapper .left-content .account-app {
+    width: 160px;
+  }
+  body .sdk-wrapper .left-content .rotate .line:nth-child(2) {
+    transform: translate(50px, 0) rotate(-50deg);
+  }
+  body .sdk-wrapper .left-content .rotate .line:nth-child(5) {
+    transform: translate(-10px, 80px) rotate(-230deg);
+  }
+  body .sdk-wrapper .left-content .rotate .line:nth-child(6) {
+    transform: translate(60px, 80px) rotate(50deg);
+  }
+  body .user-demand .right-content {
+    margin: 0 auto;
+    width: 540px;
+  }
+  body .user-demand .right-content h3 {
+    font-size: 28px;
+  }
+  body .user-demand .right-content .p1, body .user-demand .right-content .p2 {
+    font-size: 24px;
+  }
+  body .user-demand .right-content .aa-system {
+    width: 254px;
+  }
+  body .user-demand .right-content .aa-system .app-list li {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+  body .third-party .right-content h3 {
+    width: initial;
+    font-size: 28px;
+  }
+  body .third-party .right-content ul li {
+    width: 130px;
+    height: 130px;
+    font-size: 24px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -36,6 +142,8 @@ body {
 
 .main-box {
   padding: 40px 126px;
+}
+.main-box:not(:last-child) {
   margin-bottom: 40px;
 }
 .main-box h2 {
@@ -63,7 +171,6 @@ nav .nav-box {
   justify-content: space-between;
   padding: 20px;
   color: #BB7641;
-  background: #ffe4c4;
 }
 nav .nav-box ul {
   display: flex;
@@ -193,29 +300,29 @@ nav .nav-box li a {
   top: 520px;
 }
 
-.account-abstraction .content table {
+.account-abstraction .left-content {
   width: 450px;
   font-weight: 600;
   color: #AC5F24;
 }
-.account-abstraction .content td {
+.account-abstraction td {
   position: relative;
   height: 70px;
   text-align: center;
 }
-.account-abstraction .content td:first-child {
+.account-abstraction td:first-child {
   font-size: 22px;
 }
-.account-abstraction .content .td-arrow {
+.account-abstraction .td-arrow {
   font-size: 18px;
   font-weight: 500;
 }
-.account-abstraction .content .td-arrow .arrow {
+.account-abstraction .td-arrow .arrow {
   position: absolute;
   left: 48%;
   top: 18px;
 }
-.account-abstraction .content .right-item {
+.account-abstraction .right-content {
   width: 410px;
 }
 
