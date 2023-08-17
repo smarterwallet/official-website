@@ -80,6 +80,9 @@
     margin: 0 auto;
     width: 540px;
   }
+  body .user-demand .right-content .user {
+    width: 190px;
+  }
   body .user-demand .right-content h3 {
     font-size: 28px;
   }
